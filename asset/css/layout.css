@@ -1,20 +1,32 @@
-.sidebar{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    padding: 90px 0 0;
-    box-shadow: insert -1px 0 0 rgba(0, 0, 0, -1);
-    z-index: 99;
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 400px;
+  background: #000;
 }
-    @media(max-width: 767.98px){
-        .sidebar{
-            top: 11.5rem;
-            padding: 0;
-        }
-    }
 
-        .nav{
-            box-shadow:insert 0 -1px 0 rgba(0, 0, 0, -1);
-        }
+.content {
+  margin-left: 200px;
+  height: 500px;
+  width: auto;
+  position: relative;
+  background: #f00;
+  overflow: auto;
+  z-index: 1;
+}
+
+.info {
+  width: 1440px;
+  height: 300px;
+  position: relative;
+  background: #f55;
+}
+
+@media (min-width:600px) {
+  .sidebar {
+    width: 250px;
+  }
+  .content {
+    margin-left: 250px;
+  }
+}
